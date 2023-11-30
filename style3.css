@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@500&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577592;
+    --accent-color: #2294ed;
+    --accent-color-dark: #1d69a3;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: var(--primary-text-color);
+}
+
+header{
+    position: relative;
+    background-color: transparent;
+}
+
+.navbar-toggler{
+    color:#fff !important;
+}
+.navbar-nav a{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.navbar-light .navbar-brand{
+    color: #fff;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+}
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover{
+    color:#fff;
+}
+.navbar-light .navbar-nav .navbar-link{
+    color:#fff;
+}
+.w-100{
+    height: 100vh;
+}
+
+.nav-item a{
+    text-decoration: none;
+    background:
+    linear-gradient(
+      to right,
+      rgba(100, 200, 200, 1),
+      rgba(100, 200, 200, 1)
+    ),
+    linear-gradient(
+      to right,
+      rgba(255, 0, 0, 1),
+      rgba(255, 0, 180, 1),
+      rgba(0, 100, 200, 1)
+  );
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+.nav-item a:hover {
+    background-size: 0 3px, 100% 3px;
+}
+
+
+/* Add this CSS at the end of your existing styles or in a separate file */
+
+/* Style adjustments for smaller screens (e.g., mobile devices) */
+@media (max-width: 767px) {
+    body {
+        padding-top: 9rem; /* Space for fixed navbar */
+    }  
+    .navbar-nav {
+        float: none;
+    }
+  
+    .cards-container {
+        margin-left: -15px;
+    }
+  
+    .card {
+        width: 100%;
+    }
+  
+    /* Add more styles as needed for other elements on smaller screens */
+  }
+  
+  /* Style adjustments for medium-sized screens (e.g., tablets) */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .cards-container {
+        margin-right: -15px;
+    }
+}
+  /* Style adjustments for larger screens (e.g., desktop) */
+  @media (min-width: 992px) {
+    .cards-container {
+        margin-right: -30px;
+    }
+    
+    /* Add your styles for larger screens here */
+  }
+  
+h2{
+    padding-top: 150px;
+    padding-bottom: 20px;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    margin-bottom: -50px;
+    font-family: 'Poppins' ;
+    font-size: 60px;
+    font-weight: 600;
+}
+p {
+    font-family: "Roboto", sans-serif;
+    color: var(--secondary-text-color);
+    line-height: 1.4rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 1180px;
+    margin-inline: auto;
+    overflow: hidden;
+}
+
+
+.company-logo img {
+    width: 120px;
+}
+
+
+.hover-link {
+    cursor: pointer;
+}
+
+.hover-link:hover {
+    color: var(--secondary-text-color);
+}
+
+.hover-link:active {
+    color: red;
+}
+
+
+
+.news-input {
+    width: 200px;
+    height: 100%;
+    padding-inline: 12px;
+    border-radius: 4px;
+    border: 2px solid #bbd0e2;
+    font-family: "Roboto", sans-serif;
+}
+
+
+
+main {
+    padding-block: 20px;
+    margin-top: 80px;
+}
+
+.cards-container {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    align-items: start;
+    display: flex;
+    flex-direction: row;
+}
+
+.card {
+    width: 360px;
+    min-height: 400px;
+    box-shadow: 0 0 4px #d4ecff;
+    border-radius: 10px;
+    border-color: rgb(0, 0, 3);
+    cursor: pointer;
+    background-color: #fff;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 1px 1px 8px #d4ecff;
+    background-color: #f9fdff;
+    transform: translateY(-2px);
+}
+
+.card-header img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 12px;
+    background-image: linear-gradient(to bottom right, black,rgb(19, 19, 207), rgb(124, 14, 124));
+    color: white;
+}
+
+.card-content h3 {
+    font-size: 20px;
+    font-weight: 100;
+    color: white;
+}
+
+.card-content p {
+    font-size: 12px;
+    font-weight: 300;
+    color: white;
+}
+
+.card-content a {
+    font-size: 25px;
+    font-weight: 300;
+    color: whitesmoke;
+    background-color: rgb(248, 69, 69);
+    border: 1px;
+    border-radius: 3px;
+    text-align: center;
+    transition: all 0.3s ease;    
+}
+
+.card-content a:hover {
+    box-shadow: 1px 1px 8px #d4ecff;
+    transform: translateY(-2px);
+    background-size: 0 3px, 100% 3px;    
+}
+.news-source {
+    margin-block: 12px;
+}
+
+/* Copy Right Footer */
+.footer-copyright { background: #222; padding: 20px 0;}
+.footer-copyright .logo { display: inherit;}
+.footer-copyright p { color: #969696; margin: 2px 0 0;}
